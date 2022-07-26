@@ -1,0 +1,165 @@
+@keyframes animacao {
+    from{
+        background-color:rgb(132, 47, 132);   
+    }
+    to{
+        background-color:rgb(208, 50, 208);
+        font-size: 100%;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@700&display=swap');
+
+* {
+    margin:0;
+    padding:0; 
+    border: 0;
+}
+
+:root {
+    --fonte-principal: 'Oswald', sans-serif;
+    --fonte-texto: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #592D51, #9e0abf);
+
+}
+
+header {
+    position:relative;
+    width:100%;    
+    background:grey url(images/logo1.jpg) left center no-repeat;
+    background-size: cover;
+    height:15vh;
+    box-shadow:0px 4px 6px 0px rgb(0 0 0 / 24%);
+}
+
+header img {
+    height:14vh;
+    padding:10vw;
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%) ;
+}
+
+.linkPrincipal a {
+    text-decoration:none;
+    padding:8px 15px 8px 15px;
+    margin-right:30px;
+    background-color:rgb(132, 47, 132);   
+    color:white; 
+    font-size:70%;
+    font-family:var(--fonte-principal);
+    font-variant: small-caps;
+    border-radius:2px;
+}
+
+.linkPrincipal a:hover{
+    animation-name: animacao;
+    animation-duration: .7s;
+    animation-fill-mode:forwards ;
+    position:sticky;    
+}
+
+header div.linkPrincipal{
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%) ;   
+}
+
+.menuDeslizante {
+    display:none;
+}
+
+main {
+    padding:20px;
+}
+.inicial{
+    height:270px;
+    padding:20px;
+    position:relative;
+    max-width:92vw;
+    margin:10px auto;
+    background-image:linear-gradient(to right, #BF1DA3, rgb(114, 20, 191));
+    box-shadow:0 0 15px rgba(0, 0, 0, 0.250);    
+
+}
+
+.inicial img{
+    position:absolute;
+    display:inline-block;
+    max-width:50%;
+    height:250px;
+    padding:10px;
+    background-color:purple;
+}
+
+#texto {
+    position:relative;
+}
+
+.inicial p{
+    color:white;
+    position:absolute;
+    height:180px;
+    font-family: var(--fonte-texto);   
+    right:0;
+    overflow:auto;
+    width:39%;
+    margin-top:60px;   
+}
+
+.inicial h1 {
+    position:absolute;
+    color:white;
+    width:39%;
+    font-family: var(--fonte-principal);
+    font-size:1.5em;
+    right:0;
+    text-align:center;
+}
+
+.diferenca {
+    padding:20px 0 20px 20px;
+    position:relative;
+    background-image:linear-gradient(to right, #530E8C, #BF1DA3);
+    max-width:92vw;
+    height:270px;
+    margin:80px auto;
+    color:white;
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.250);    
+}
+
+#diferenca-texto{
+    position:absolute;
+    max-width: 50%;
+}
+
+#diferenca-texto h2 {
+    text-align:center;
+}
+
+.diferenca img {
+    display:inline-block;
+    position:absolute;
+    max-width:39%;
+    padding:10px;
+    height:250px;
+    background-color:purple;
+    right:20px;
+}
+
+.diferenca p {
+        
+    overflow:auto;   
+    left:0;
+    max-height:180px;
+    padding-top:40px; 
+}
+
+
+footer {
+}
