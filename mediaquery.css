@@ -1,4 +1,4 @@
-@media (min-width:106px) and (max-width:860px) 
+@media (min-width:510px) and (max-width:860px) 
 {
     .linkPrincipal a {
         display:none;
@@ -8,8 +8,6 @@
         display: block;
        
     }
-
-
 
     .Hamburger {
         position:absolute;
@@ -26,43 +24,5 @@
         display:block;
         margin-bottom:5px;
         background-color: rgb(252, 252, 252);
-    }
-
-    .inicial {        
-        height: 100%;
-        max-width:100%;
-        display:block;  
-    }
-
-    .inicial img {
-        position:static;
-        margin:auto;
-        display:block;
-        max-width:95%;
-    }
-
-    #texto {
-        text-align: justify;
-        position:static;
-    }
-
-    .inicial p {
-        position:static;
-        display:block;
-        width:100%;
-        height:100%;
-        margin-top:0;
-    }
-
-    .inicial h1 {
-        position:static;
-        text-align:center;
-        display:block;
-        margin:20px 0; 
-        width:100%;
-    }
-
-    .diferenca, .diferenca img {
-        position:static;
     }
 }
