@@ -2,19 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@700&display=swap');
 
 @keyframes animacao {
-    from{
-        background-color:rgb(132, 47, 132);   
+    from {
+        background-color: rgb(132, 47, 132);
     }
-    to{
-        background-color:rgb(208, 50, 208);
+
+    to {
+        background-color: rgb(208, 50, 208);
         font-size: 100%;
     }
 }
 
 
 * {
-    margin:0;
-    padding:0; 
+    margin: 0;
+    padding: 0;
     border: 0;
 }
 
@@ -32,34 +33,35 @@ body {
 header {
     display: flex;
     align-items: center;
-    position:sticky;
+    position: sticky;
     top: 0;
-    background:#1C1780;
-    height:90px;
-    box-shadow:0px 4px 6px 0px rgb(0 0 0 / 24%);
+    background: #1C1780;
+    height: 90px;
+    width: 100%;
+    box-shadow: 0px 4px 6px 0px rgb(0 0 0 / 24%);
 }
 
 #texto-logo {
     font: normal normal 2.5em var(--fonte-titulo);
-    color:white;
+    color: white;
     position: absolute;
     left: 10%;
 }
 
-span.letraCustom{
+span.letraCustom {
     font-family: var(--font-fq);
     font-size: 1.5em;
 }
 
-#texto-logo::after{
-    content: 'FQ' ;
+#texto-logo::after {
+    content: 'FQ';
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-family: var(--font-fq); 
+    font-family: var(--font-fq);
     border: 3px solid black;
     border-radius: 10px;
-    padding: 0 15px 0 5px ;
+    padding: 0 15px 0 5px;
     margin-left: 5px;
 }
 
@@ -69,34 +71,54 @@ nav {
 }
 
 .linkPrincipal a {
-    text-decoration:none;
-    padding:8px 15px 8px 15px;
-    margin-right:30px;
-    background-color:rgb(132, 47, 132);   
-    color:white; 
-    font-size:70%;
-    font-family:var(--fonte-principal);
+    text-decoration: none;
+    padding: 8px 15px 8px 15px;
+    margin-right: 30px;
+    background-color: rgb(132, 47, 132);
+    color: white;
+    font-size: 70%;
+    font-family: var(--fonte-principal);
     font-variant: small-caps;
-    border-radius:2px;
+    border-radius: 2px;
 }
 
-.linkPrincipal a:hover{
+.linkPrincipal a:hover {
     animation-name: animacao;
     animation-duration: .7s;
-    animation-fill-mode:forwards ;
-    position:sticky;    
+    animation-fill-mode: forwards;
+    position: sticky;
 }
 
 .menuDeslizante {
-    display:none;
+    display: none;
 }
 
-.background {
-  background-image: url(images/imagemDesenvolvedor.jpg);
-  background-size: auto;
+.slide-inicial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 430px;
+    width:100%;
+    background: grey url(images/imagemDesenvolvedor.jpg) center center no-repeat;
+    background-size: cover;
 }
 
-.pergunta {width: 100%; height: 200px}
-
-footer {
+.pergunta {
+    height: 200px;
+    
+    padding:40px 20px;
 }
+
+.pergunta > h1 {
+    text-decoration: underline;
+    color:rgb(248, 231, 106);
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.307);
+    font: normal normal 3em 'Oswald', sans-serif;
+    padding-bottom: 40px;
+}
+
+.pergunta > p {
+}
+
+footer {}
