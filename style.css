@@ -101,17 +101,30 @@ nav {
     margin-bottom: 40px;
 }
 
-.pergunta > p {
-    padding-top: 20px;
+.pergunta > #descrição-sobre-programador {
+    font: normal normal 1.8rem var(--fonte-titulo);
+    color:white;
+    margin-top: 60px;
+    padding-bottom: 50px;
 }
 
 .slide-diferenca {
+    margin: auto;
     display:flex;
-    max-width: 1000px;
+    max-width: 1200px;
     flex-wrap: wrap;
+    justify-content:space-between ;
     flex-direction: row;
-    margin-top: 15vh;
+    margin-top: 18vh;
     padding: 0 40px;
+}
+
+#diferenca-txt p{
+    width: 50%;
+}
+
+#diferenca-titulo {
+    font:normal normal 2.5rem var(--fonte-texto);
 }
 
 .slide-diferenca img{

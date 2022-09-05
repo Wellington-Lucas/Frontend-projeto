@@ -16,7 +16,8 @@
 <body>
     <header>
         <div class="menu">
-            <h1 class="texto-logo"><span class="letraCustom">F</span>ront <span class="letraCustom">Q</span>uestions</h1>
+            <h1 class="texto-logo"><span class="letraCustom">F</span>ront <span class="letraCustom">Q</span>uestions
+            </h1>
             <nav>
                 <div class="linkPrincipal">
                     <a href="#">HTML</a>
@@ -55,16 +56,22 @@
         <section class="slide-inicial">
             <div class="pergunta">
                 <h1 id="pergunta-principal">O que é ser Front-end?</h1>
-                <p>Um programador front end constrói a interface visual dos Websites, portanto ele cuida da parte visível do site, por isso o nome de Front. <br> A área de front end também é dividida entre: o programador e o desenvolvedor front end, que ambas serão ditas abaixo</p>
+                <p id="descrição-sobre-programador">Um programador front end constrói a interface visual dos Websites,
+                    portanto ele cuida da parte visível do site, por isso o nome de Front. <br> A área de front end
+                    também é dividida entre: o programador e o desenvolvedor front end, que ambas serão ditas abaixo</p>
             </div>
         </section>
         <section class="slide-diferenca">
             <div id="diferenca-txt">
-                <h1>Diferença entre programador e desenvolvedor</h1>
-                <p></p>
+                <h1 id="diferenca-titulo">Diferença entre programador e desenvolvedor</h1>
+                <p>Um programador está diretamente ligado à produção e elaboração do código, se importando com a lógica.
+                    Ele geralmente também fica responsável por somente uma fração do projeto. <br> Já o desenvolvedor tem que ter uma visão mais ampla de todo o projeto em si, ganhando mais responsabilidades, como: ajudar a elaborar o design do site, o relacionamento com seus clientes,
+                    entre outras funções. </p>
             </div>
             <picture>
-                <img src="images/imagemDesenvolvedor.jpg" alt="">
+                <source media="(max-width: 700px)" srcset="images/doisDesenvolvedoresP.jpg">
+                <source media="(max-width:1200px )" srcset="images/doisDesenvolvedoresM.jpg">
+                <img src="images/doisDesenvolvedoresG.jpg" alt="Dois desenvolvedores escrevendo código">
 
             </picture>
 
