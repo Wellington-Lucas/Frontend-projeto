@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -108,29 +112,56 @@ nav {
     padding-bottom: 50px;
 }
 
-.slide-diferenca {
-    margin: auto;
+.container-diferenca {
+    margin: 15vh auto 20vh auto;
     display:flex;
-    max-width: 1200px;
     flex-wrap: wrap;
+    max-width: 1200px;
     justify-content:space-between ;
-    flex-direction: row;
-    margin-top: 18vh;
-    padding: 0 40px;
+
 }
 
-#diferenca-txt p{
+.diferenca-txt {
+    width: 50%;
+    text-align: justify;
+}
+
+.diferenca-titulo {
+    font:normal normal 2.5rem var(--fonte-texto);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.diferenca-p {
+    font:normal normal 1.8rem var(--fonte-texto);
+    line-height: 45px;
+}
+
+.primeiro-p-diferenca {
+    margin-bottom: 40px;
+}
+
+.foto-diferenca, .diferenca-img{
+    text-align: center;
     width: 50%;
 }
 
-#diferenca-titulo {
-    font:normal normal 2.5rem var(--fonte-texto);
+.tecnologias-recomendadas {
 }
 
-.slide-diferenca img{
-    display: block;
-    
-    width: 400px;
+.container-card{
+    width: 280px;
+    height:50px;
+    background-color: brown;
+    padding:10px;
 }
 
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sobre-html-img > img {
+    width: 100%;
+}
 footer {}
