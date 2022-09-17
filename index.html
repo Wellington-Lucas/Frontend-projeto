@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/celular.css">
+    <link rel="stylesheet" href="estilos/impressora.css" media="print">
+
     <link rel="shortcut icon" href="icon/computer-laptop-icon.png" type="image/x-icon">
     <title>Front-end</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,60 +26,40 @@
                     <a href="#">CSS</a>
                     <a href="#">Sobre</a>
                 </div>
-                <div class="Hamburger">
-                    <a href="#">
-                        <section class="menuDeslizante">
-                            <a href="#">
-                                <p>HTML</p>
-                            </a>
-                            <a href="#">
-                                <p>CSS</p>
-                            </a>
-                            <a href="#">
-                                <p>Sobre</p>
-                            </a>
-                        </section>
-                        <span id="a1">
-                        </span>
-                    </a>
-                    <a href="#">
-                        <span id="a2">
-                        </span>
-                    </a>
-                    <a href="#">
-                        <span id="a3">
-                        </span>
-                    </a>
-                </div>
             </nav>
         </div>
     </header>
     <main>
         <section class="slide-inicial">
-            <div class="pergunta">
+            <div class="container-pergunta">
                 <h1 id="pergunta-principal">O que é ser Front-end?</h1>
-                <p id="descrição-sobre-programador">Um programador front end constrói a interface visual dos Websites,
-                    portanto ele cuida da parte visível do site, por isso o nome de Front. <br> A área de front end
-                    também é dividida entre: o programador e o desenvolvedor front end, que ambas serão ditas abaixo.
+                <div class="descricao">
+                    <p class="descricao-sobre-programador">Um programador front end constrói a interface visual dos Websites,
+                        portanto ele cuida da parte visível do site, por isso o nome de Front. <br>
+                    <p class="descricao-sobre-programador">
+                        A área de front end
+                        também é dividida entre: o programador e o desenvolvedor front end, que ambas serão ditas abaixo.
+                    </p>
+                </div>
                 </p>
             </div>
         </section>
 
         <section class="container-diferenca">
-            <div class="diferenca-txt">
+            <article class="diferenca-txt">
                 <h1 class="diferenca-titulo">Diferença entre programador e desenvolvedor</h1>
-                <p class="diferenca-p primeiro-p-diferenca">Um <strong>programador</strong> está diretamente ligado à
+                <p class="diferenca-p">Um <strong>programador</strong> está diretamente ligado à
                     produção e
                     elaboração do código, se
                     importando com a lógica.
                     Ele geralmente também fica responsável por somente uma fração do projeto.
                 </p>
-                <hr>
+                <br>
                 <p class="diferenca-p">Já o <strong>desenvolvedor</strong> tem que ter uma visão mais ampla de todo o
                     projeto em si, ganhando mais responsabilidades, como: ajudar a elaborar o design do site, tratar do
                     relacionamento com seus clientes, definir as tecnologias utilizadas no processo, entre varias outras
                     funções </p>
-            </div>
+            </article>
             <div class="foto-diferenca">
                 <picture>
                     <source media="(max-width: 700px)" srcset="images/doisDesenvolvedoresP.jpg">

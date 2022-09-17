@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@media screen and (max-width:600px) {
+    html {
+        font-size: 50%;
+    }
+    .descricao > p:first-child {
+        margin-bottom: 30px;
+    }   
+
+    .diferenca-txt {
+        margin-bottom: 60px;
+        
+    }
+
+    .diferenca-p {
+        line-height: 30px;
+    }
+}
