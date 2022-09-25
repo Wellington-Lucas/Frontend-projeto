@@ -36,6 +36,12 @@ header {
     top: 0;
 }
 
+#nav {display:block}
+
+#burger, #menuMobile {display:none; cursor:pointer}
+
+
+
 .menu {
     margin: auto;
     display: flex;
@@ -59,6 +65,7 @@ span.letraCustom {
 
 nav {
     font-size: 2rem;
+    display: block;
 }
 
 .linkPrincipal a {
@@ -67,9 +74,8 @@ nav {
     color: white;
     font-size: 1.2rem;
     font-family: var(--fonte-principal);
-    font-variant: small-caps;
     border-radius: 2px;
-    border: 0 solid transparent;
+    border-bottom: 0 solid transparent;
     transition:.3s linear;
 }
 
