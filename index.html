@@ -5,31 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/mediaquery.css">
-    <link rel="stylesheet" href="estilos/impressora.css" media="print">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="icon/computer-laptop-icon.png" type="image/x-icon">
     <title>Front-end</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+    <link rel="stylesheet" href="estilos/impressora.css" media="print">
 </head>
 
 <body>
     <header>
         <menu class="menu">
-            <h1 class="texto-logo"><span class="letraCustom">F</span>ront <span class="letraCustom">Q</span>uestions
-            </h1>
-            <nav id="nav" class="linkPrincipal">
+            <a href="index.html"><h1 class="texto-logo"><span class="letraCustom">F</span>ront<span class="letraCustom">Q</span>uestions
+            </h1></a>
+            <nav class="linkPrincipal">
                 <a href="#">HTML</a>
                 <a href="#">CSS</a>
                 <a href="#">SOBRE</a>
             </nav>
-            <span id="burger" class="material-icons" onclick="clickmenu()">menu</span>
+            <span class="burger material-icons" onclick="clickmenu()">menu</span>
         </menu>
         
     </header>
-    <div class="linkPrincipal" id="menuMobile">
+    <div class="menuMobile linkPrincipal">
         <a href="#">HTML</a> 
         
         <a href="#">CSS</a>
@@ -41,10 +41,10 @@
             <div class="container-pergunta">
                 <h1 id="pergunta-principal">O que é ser Front-end?</h1>
                 <div class="descricao">
-                    <p class="descricao-sobre-programador">Um programador front end constrói a interface visual dos
+                    <p>Um programador front end constrói a interface visual dos
                         Websites,
                         portanto ele cuida da parte visível do site, por isso o nome de Front. <br>
-                    <p class="descricao-sobre-programador">
+                    <p>
                         A área de front end
                         também é dividida entre: o programador e o desenvolvedor front end, que ambas serão ditas
                         abaixo.
@@ -117,11 +117,14 @@
     </main>
 
     <script>
+        var menuHamburger = document.querySelector(".burger");
+        var menuM = document.querySelector(".menuMobile")
         function clickmenu() {
-            if (menuMobile.style.display == 'flex') {
-                menuMobile.style.display = 'none';
+            
+            if (menuM.style.display == 'flex') {
+                menuM.style.display = 'none';
             } else {
-                menuMobile.style.display = 'flex';
+                menuM.style.display = 'flex';
             }
         }
     </script>

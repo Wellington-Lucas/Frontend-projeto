@@ -1,16 +1,15 @@
 @media screen and (max-width:600px) {
     html {
         font-size: 50%;
-        box-sizing: border-box;
     }
 
-    .descricao > p:first-child {
+    .descricao>p:first-child {
         margin-bottom: 30px;
-    }   
+    }
 
     .diferenca-txt {
         margin-bottom: 60px;
-        
+
     }
 
     .diferenca-p {
@@ -18,64 +17,66 @@
     }
 }
 
+
+
 @media screen and (max-width:768px) {
-    * {
-        box-sizing: border-box;
+    .linkPrincipal {
+        display: none
     }
-    #nav{display:none}
 
     .slide-inicial {
         position: relative;
-        z-index: -1;
     }
 
     .container-pergunta {
         position: absolute;
-        top:50%;
+        top: 50%;
         transform: translateY(-50%);
     }
 
-    #burger {
-        display:block;
-        color:white;
+    .burger {
+        display: block;
+        color: white;
     }
-    #menuMobile {
+
+    .burger::selection {
+        background-color: transparent;
+    }
+
+    .menuMobile {
         display: none;
         align-items: center;
         justify-content: center;
-        flex-direction:column;
+        flex-direction: column;
         position: fixed;
-        background-image:linear-gradient(to bottom,  var(--corPrincipal),  #342db3);
+        background-image: linear-gradient(to bottom, var(--corPrincipal), #342db3);
         height: 200px;
         width: 100%;
         z-index: 2;
+        -webkit-tap-highlight-color: transparent;
     }
 
-    #menuMobile a {
-
+    .menuMobile a {
         padding: 20px;
         text-align: center;
         width: 100%;
-        border:0px;
-        position: relative ;
-    }  
+        border: 0px;
+        position: relative;
+    }
 
-    #menuMobile a::after {
-        transition: .35s ;
-        content:' ';
+    .menuMobile a::after {
+        transition: .35s;
+        content: ' ';
         position: absolute;
         left: 0;
         bottom: 0;
         border: 1px solid white;
         width: 0%;
-    }    
+    }
 
 
-    #menuMobile a:hover::after {
+    .menuMobile a:hover::after {
         width: 100%;
     }
 
 }
-
-
-   
