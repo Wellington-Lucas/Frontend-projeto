@@ -3,17 +3,12 @@
         font-size: 50%;
     }
 
-    .descricao>p:first-child {
-        margin-bottom: 30px;
-    }
-
-    .diferenca-txt {
-        margin-bottom: 60px;
-
-    }
-
     .diferenca-p {
         line-height: 30px;
+    }
+
+    .diferenca-img {
+        width: 250px;
     }
 }
 

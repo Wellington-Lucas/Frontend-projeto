@@ -18,8 +18,10 @@
 <body>
     <header>
         <menu class="menu">
-            <a href="index.html"><h1 class="texto-logo"><span class="letraCustom">F</span>ront<span class="letraCustom">Q</span>uestions
-            </h1></a>
+            <a href="index.html">
+                <h1 class="texto-logo"><span class="letraCustom">F</span>ront<span class="letraCustom">Q</span>uestions
+                </h1>
+            </a>
             <nav class="linkPrincipal">
                 <a href="#">HTML</a>
                 <a href="#">CSS</a>
@@ -27,13 +29,13 @@
             </nav>
             <span class="burger material-icons" onclick="clickmenu()">menu</span>
         </menu>
-        
+
     </header>
     <div class="menuMobile linkPrincipal">
-        <a href="#">HTML</a> 
-        
+        <a href="#">HTML</a>
+
         <a href="#">CSS</a>
-        
+
         <a href="#">SOBRE</a>
     </div>
     <main>
@@ -41,13 +43,10 @@
             <div class="container-pergunta">
                 <h1 id="pergunta-principal">O que é ser Front-end?</h1>
                 <div class="descricao">
-                    <p>Um programador front end constrói a interface visual dos
-                        Websites,
-                        portanto ele cuida da parte visível do site, por isso o nome de Front. <br>
                     <p>
-                        A área de front end
-                        também é dividida entre: o programador e o desenvolvedor front end, que ambas serão ditas
-                        abaixo.
+                        Um programador front end constrói a interface visual dos Websites, portanto ele cuida da parte visível do site, por isso o nome de Front. <br>
+                    <p>
+                        A área de front end também é dividida entre: o programador e o desenvolvedor front end, que ambas serão ditas abaixo.
                     </p>
                 </div>
                 </p>
@@ -71,9 +70,9 @@
             </article>
             <div class="foto-diferenca">
                 <picture>
-                    <source media="(max-width: 700px)" srcset="images/doisDesenvolvedoresP.jpg">
-                    <source media="(max-width:1200px )" srcset="images/doisDesenvolvedoresM.jpg">
-                    <img class="diferenca-img" src="images/doisDesenvolvedoresG.jpg"
+                    <source media="(max-width: 700px)" srcset="imagens/doisDesenvolvedoresP.jpg">
+                    <source media="(max-width:1200px )" srcset="imagens/doisDesenvolvedoresM.jpg">
+                    <img class="diferenca-img" src="imagens/doisDesenvolvedoresG.jpg"
                         alt="Dois desenvolvedores escrevendo código">
                 </picture>
             </div>
@@ -88,18 +87,37 @@
 
             <div class="cards">
 
-                <div class="container-card sobre-html">
-                    <figure class="sobre-html-img">
-                        <img src="images/iconeHtml.png" alt="">
-                    </figure>
-                </div>
-                <div class="container-card sobre-css">
+                <div class="container-card card-html">
                     <figure>
-                        <img src="images/iconeCss.png" alt="ícone do Css">
+                        <img src="imagens/iconeHtml.png" alt="">
                     </figure>
+                    <div class="card-texto">
+                        <h2>HTML</h2>
+                        <p>A <abbr title="Hyper Text Markup Language" class="html">HTML</abbr> é a linguagem essencial para todo programador <em lang="en">Frontend</em>, visto que ela é a base para todos os sites de hoje em dia.<p>
+                        <a href="#" class="btn-card">Veja Mais</a>
+                    </div>
                 </div>
-                <div class="container-card sobre-javascript">
+                <div class="container-card card-css">
+                    <figure>
+                        <img src="imagens/iconeCss.png" alt="ícone do Css">
+                    </figure>
+                    <div class="card-texto">
+                        <h2>CSS</h2>
+                        <p>A <abbr title="Cascading Style Sheets">Css</abbr> é a linguagem responsável por dar estilo e melhorar a vizualização da página, pois ela se trata de uma linguagem de <ins>estilização</ins>.</p>
+                        <a href="#" class="btn-card">Veja Mais</a>
+                    </div>
+                </div>
+                <div class="container-card card-js">
+                    <figure>
+                        <img src="imagens/iconeJS.png" alt="">
+                    </figure>
+                    <div class="card-texto">
+                        <h2>JavaScript</h2>
+                        <p>O <abbr title="JavaScript">JS</abbr> é a linguagem que mais exerce funções dentro dos sites atualmente, sendo uma das linguagens de programação mais utilizadas do mundo.</p>
 
+
+                        <a href="#" class="btn-card">Veja Mais</a>
+                    </div>
                 </div>
 
             </div>
@@ -120,7 +138,7 @@
         var menuHamburger = document.querySelector(".burger");
         var menuM = document.querySelector(".menuMobile")
         function clickmenu() {
-            
+
             if (menuM.style.display == 'flex') {
                 menuM.style.display = 'none';
             } else {
