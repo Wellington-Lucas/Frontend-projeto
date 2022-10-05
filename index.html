@@ -7,12 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="icon/computer-laptop-icon.png" type="image/x-icon">
-    <title>Front-end</title>
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Css -->
+    <link rel="preload" href="estilos/style.css" as="style">
+    
     <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/mediaquery.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css" media="screen and (orientation:portrait)">
     <link rel="stylesheet" href="estilos/impressora.css" media="print">
+    <title>Front-end</title>
 </head>
 
 <body>
@@ -134,7 +138,7 @@
                 labore, amet maiores totam. Tenetur voluptatibus odit est?</span></p>
     </main>
 
-    <script>
+    <script defer>
         var menuHamburger = document.querySelector(".burger");
         var menuM = document.querySelector(".menuMobile")
         function clickmenu() {
