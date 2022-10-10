@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Um programador front end constrói a interface visual dos Websites, portanto ele cuida da parte visível do site, por isso o nome de Front.">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="icon/computer-laptop-icon.png" type="image/x-icon">
     <!-- Fontes -->
@@ -12,10 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Css -->
     <link rel="preload" href="estilos/style.css" as="style">
-    
     <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/mediaquery.css" media="screen and (orientation:portrait)">
+    <link rel="stylesheet" href="estilos/mediaquery.css" media="screen">
     <link rel="stylesheet" href="estilos/impressora.css" media="print">
+
     <title>Front-end</title>
 </head>
 
@@ -27,30 +29,32 @@
                 </h1>
             </a>
             <nav class="linkPrincipal">
-                <a href="#">HTML</a>
-                <a href="#">CSS</a>
-                <a href="#">SOBRE</a>
+                <a href="paginas/sobreHtml.html">Html</a>
+                <a href="paginas/sobreCss.html">Css</a>
+                <a href="paginas/sobre.html">Sobre</a>
             </nav>
             <span class="burger material-icons" onclick="clickmenu()">menu</span>
         </menu>
 
     </header>
     <div class="menuMobile linkPrincipal">
-        <a href="#">HTML</a>
+        <a href="paginas/sobreHtml.html">HTML</a>
 
-        <a href="#">CSS</a>
+        <a href="paginas/sobreCss.html">CSS</a>
 
-        <a href="#">SOBRE</a>
+        <a href="paginas/sobre.html">SOBRE</a>
     </div>
     <main>
         <section class="slide-inicial">
             <div class="container-pergunta">
-                <h1 id="pergunta-principal">O que é ser Front-end?</h1>
+                <h1 id="pergunta-principal">O que é ser <span lang="en-us">Front-end</span>?</h1>
                 <div class="descricao">
                     <p>
-                        Um programador front end constrói a interface visual dos Websites, portanto ele cuida da parte visível do site, por isso o nome de Front. <br>
+                        Um programador front end constrói a interface visual dos Websites, portanto ele cuida da parte
+                        visível do site, por isso o nome de Front. <br>
                     <p>
-                        A área de front end também é dividida entre: o programador e o desenvolvedor front end, que ambas serão ditas abaixo.
+                        A área de front end também é dividida entre: o programador e o desenvolvedor front end, que
+                        ambas serão ditas abaixo.
                     </p>
                 </div>
                 </p>
@@ -60,19 +64,20 @@
         <section class="container-diferenca">
             <article class="diferenca-txt">
                 <h1 class="diferenca-titulo">Diferença entre programador e desenvolvedor</h1>
-                <p class="diferenca-p">Um <strong>programador</strong> está diretamente ligado à
-                    produção e
-                    elaboração do código, se
-                    importando com a lógica.
-                    Ele geralmente também fica responsável por somente uma fração do projeto.
+                <p class="diferenca-p">
+                    Um <strong>programador</strong> está diretamente ligado à
+                    produção e elaboração do código, se importando com a lógica. Ele geralmente também fica responsável
+                    por somente uma fração do projeto.
                 </p>
                 <br>
-                <p class="diferenca-p">Já o <strong>desenvolvedor</strong> tem que ter uma visão mais ampla de todo o
+                <p class="diferenca-p">
+                    Já o <strong>desenvolvedor</strong> tem que ter uma visão mais ampla de todo o
                     projeto em si, ganhando mais responsabilidades, como: ajudar a elaborar o design do site, tratar do
                     relacionamento com seus clientes, definir as tecnologias utilizadas no processo, entre varias outras
-                    funções </p>
+                    funções
+                </p>
             </article>
-            <div class="foto-diferenca">
+            <div>
                 <picture>
                     <source media="(max-width: 700px)" srcset="imagens/doisDesenvolvedoresP.jpg">
                     <source media="(max-width:1200px )" srcset="imagens/doisDesenvolvedoresM.jpg">
@@ -87,7 +92,7 @@
 
         <section class="tecnologias-recomendadas">
 
-            <h1 class="titulo-card">Tecnologias utilizadas</h1>
+            <h1 class="titulo-card">O que eu preciso para ser um programador <span lang="en-us">Frontend</span>?</h1>
 
             <div class="cards">
 
@@ -97,18 +102,24 @@
                     </figure>
                     <div class="card-texto">
                         <h2>HTML</h2>
-                        <p>A <abbr title="Hyper Text Markup Language" class="html">HTML</abbr> é a linguagem essencial para todo programador <em lang="en">Frontend</em>, visto que ela é a base para todos os sites de hoje em dia.<p>
-                        <a href="#" class="btn-card">Veja Mais</a>
+                        <p>A <abbr title="Hyper Text Markup Language" class="html">HTML</abbr> é a linguagem essencial
+                            para todo programador <span lang="en-us">Frontend</span>, visto que ela é a base para todos
+                            os sites de hoje em dia.</p>
+                        <a href="paginas/sobreHtml.html" class="btn-card">Veja Mais</a>
+
                     </div>
                 </div>
                 <div class="container-card card-css">
                     <figure>
-                        <img src="imagens/iconeCss.png" alt="ícone do Css">
+                        <img src="imagens/iconeCss.png" alt="">
                     </figure>
                     <div class="card-texto">
                         <h2>CSS</h2>
-                        <p>A <abbr title="Cascading Style Sheets">Css</abbr> é a linguagem responsável por dar estilo e melhorar a vizualização da página, pois ela se trata de uma linguagem de <ins>estilização</ins>.</p>
-                        <a href="#" class="btn-card">Veja Mais</a>
+                        <p>A <abbr title="Cascading Style Sheets">Css</abbr> é a linguagem responsável por dar estilo e
+                            melhorar a vizualização da página, pois ela se trata de uma linguagem de
+                            <ins>estilização</ins>.
+                        </p>
+                        <a href="paginas/sobreCss.html" class="btn-card">Veja Mais</a>
                     </div>
                 </div>
                 <div class="container-card card-js">
@@ -117,10 +128,9 @@
                     </figure>
                     <div class="card-texto">
                         <h2>JavaScript</h2>
-                        <p>O <abbr title="JavaScript">JS</abbr> é a linguagem que mais exerce funções dentro dos sites atualmente, sendo uma das linguagens de programação mais utilizadas do mundo.</p>
-
-
-                        <a href="#" class="btn-card">Veja Mais</a>
+                        <p>O <abbr title="JavaScript">JS</abbr> é a linguagem que mais exerce funções dentro dos sites
+                            atualmente, sendo uma das linguagens de programação mais utilizadas do mundo.</p>
+                        <a href="paginas/sobreJs.html" class="btn-card">Veja Mais</a>
                     </div>
                 </div>
 
@@ -138,23 +148,25 @@
                 labore, amet maiores totam. Tenetur voluptatibus odit est?</span></p>
     </main>
 
-    <script defer>
-        var menuHamburger = document.querySelector(".burger");
-        var menuM = document.querySelector(".menuMobile")
-        function clickmenu() {
 
-            if (menuM.style.display == 'flex') {
-                menuM.style.display = 'none';
-            } else {
-                menuM.style.display = 'flex';
-            }
-        }
-    </script>
 
     <footer>
 
     </footer>
 
+    <script>
+        let menuHamburger = document.querySelector(".burger");
+        let menuM = document.querySelector(".menuMobile")
+        function clickmenu() {
+
+            if (menuM.style.display == 'flex') {
+                menuM.style.display = 'none';
+
+            } else {
+                menuM.style.display = 'flex';
+            }
+        }
+    </script>
 </body>
 
 </html>

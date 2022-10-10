@@ -33,8 +33,9 @@ body {
 header {
     background: var(--corPrincipal);
     height: 78px;
+    width: 100%;
     box-shadow: 0px 4px 6px 0px rgb(0 0 0 / 24%);
-    position: sticky;
+    position:sticky;
     z-index: 2;
     top: 0;
 }
@@ -47,6 +48,10 @@ header {
     align-items: center;
     height: inherit;
     position: relative;
+}
+
+section:not(.slide-inicial) {
+    max-width: 1368px;
 }
 
 .texto-logo {
@@ -69,6 +74,7 @@ span.letraCustom {
     color: white;
     font-size: 1.2rem;
     font-family: var(--fonte-principal);
+    text-transform: uppercase;
     border-radius: 2px;
     border-bottom: 0 solid transparent;
     transition:.2s linear;
@@ -86,8 +92,8 @@ main {
 
 .slide-inicial {
     display: flex;
-    align-items:center;
     justify-content: center;
+    align-items:center;
     text-align: center;
     height: 500px;
     width: 100%;
@@ -97,7 +103,6 @@ main {
 }
 
 .container-pergunta {
-    height: 200px;
     padding: 0px 40px;
 }
 
@@ -122,10 +127,10 @@ main {
 }
 
 .container-diferenca {
-    margin: 100px auto;
+    margin: 100px auto 160px auto ;
     display:flex;
+    align-items: center;
     flex-wrap: wrap;
-    max-width: 1200px;
     justify-content:space-around ;
 
 }
@@ -143,30 +148,35 @@ main {
 .diferenca-p {
     font:normal normal 1.8rem var(--fonte-texto);
     line-height: 45px;
-    margin-bottom:50px ;
+    margin-bottom:60px ;
 }
 
 .diferenca-img{
     display: block;
     margin: auto;
+    margin: 0 20px;
+    margin-left:50px ;
     width:350px;
 }
 
 .tecnologias-recomendadas {
     margin: auto;
+    width: 100%;
+    height: auto;
 }
 
 .titulo-card {
-    font:normal normal 2.6rem var(--fonte-texto);
-    margin-bottom:80px;    
+    font:normal 600 2.5rem var(--fonte-texto);
+    margin-bottom:140px;    
     text-align: center;
-
 }
 
 .cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
+    height: 50%;
 }
 
 .container-card{
@@ -175,9 +185,13 @@ main {
     height:650px;
     border: 1px solid var(--corPrincipal);
     box-shadow:0px 0px 10px 2px rgba(0, 0, 0, 0.218) ;
+    margin:0 30px;
+    margin-bottom:30px ;
+
 }
 
-.container-card  img {
+.container-card img {
+    height: auto;
     width: 100%;
 }
 
@@ -204,23 +218,18 @@ main {
     margin: 0 3px;
 }
 
-.card-html abbr {
-    border: 1px solid #d84b1c;
-}
+.card-html abbr {border: 1px solid #d84b1c;}
 
-.card-css abbr {
-    border: 1px solid #317FBF;
-}
+.card-css abbr {border: 1px solid #317FBF;}
 
-.card-js abbr {
-    border: 1px solid #E5A032;
-}
+.card-js abbr {border: 1px solid #E5A032;}
+
 .card-css ins {
     text-decoration: dashed;
 }
 
 .btn-card {
-    margin: auto;
+    margin: 0 auto 30px auto;
     display: flex;
     width: 70%;
     height: 50px;
@@ -246,9 +255,10 @@ main {
 }
 
 .btn-card:hover {
-
     width: 100%;
 }
+
+
 
 
 footer {}
