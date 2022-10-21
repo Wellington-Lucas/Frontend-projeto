@@ -163,11 +163,12 @@ main {
     margin: auto;
     width: 100%;
     height: auto;
+    margin-bottom: 100px;
 }
 
 .titulo-card {
     font:normal 600 2.5rem var(--fonte-texto);
-    margin-bottom:140px;    
+    margin-bottom:110px;    
     text-align: center;
 }
 
@@ -256,6 +257,42 @@ main {
 
 .btn-card:hover {
     width: 100%;
+}
+
+/* Parte explicativa sobre o computador */
+
+.pc-bom {
+    width: 100%;
+}
+
+.background-pc {
+    background:black center center url(../imagens/computadorMod.jpg) fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+.titulo-pc-bom {
+    font:normal 600 2.5rem var(--fonte-texto);
+    margin-bottom:110px;    
+    text-align: center; 
+}
+
+.texto-pc {
+    margin: auto;
+    padding: 0 30px 20px 30px;
+    width: 500px;   
+    font-family: var(--fonte-titulo);
+    background-color:#c0c0c0 ;
+}
+
+.texto-pc:first-child {
+    margin-bottom: 70px;
+}
+
+#titulo-pc {
+    font: normal normal 3.2rem var(--fonte-titulo) ;
+    text-align: center;
+    padding: 10px;
 }
 
 
