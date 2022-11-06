@@ -67,18 +67,19 @@ span.letraCustom {
 
 .linkPrincipal {
     font-size: 2rem;
-    display:block;
+    display: block;
 }
 
 .linkPrincipal a {
     padding: 8px 15px;
     color: white;
     font-size: 1.2rem;
-    font-family: var(--fonte-link);
+    font-family: var(--fonte-cod);
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 2px;
-    border-bottom: 0 solid transparent;
+    border-bottom: 1px solid transparent;
     transition: .2s linear;
 }
 
@@ -93,6 +94,7 @@ span.letraCustom {
 
 main{
     margin: auto;
+    margin-bottom: 150px;
 }
 
 #slide-inicial {
@@ -120,7 +122,7 @@ main{
     margin-bottom: 40px;
 }
 
-#container-pergunta > #descricao-frontend {
+#container-pergunta>#descricao-frontend {
     font: normal normal 1.8rem var(--fonte-titulo-principal);
     color: white;
     margin-top: 60px;
@@ -169,7 +171,8 @@ main{
 }
 
 #titulo-card:target {
-    scroll-margin-top: 150px; /* Cria uma margem quando o elemento é clicado */
+    scroll-margin-top: 150px;
+    /* Cria uma margem quando o elemento é clicado */
 }
 
 #titulo-card {
@@ -188,19 +191,23 @@ main{
 }
 
 .container-card {
-    width: 320px;
+    width: 280px;
     /* 253px é o padrão para a img */
-    height: 650px;
+    height: max-content;
+    min-height: 550px;
+    padding-bottom: 20px;
     border: 1px solid var(--corPrincipal);
+    border-radius: 20px;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.218);
     margin: 0 30px;
     margin-bottom: 30px;
-
 }
 
 .container-card img {
     height: auto;
     width: 100%;
+    object-fit: contain;
+    border-radius: 30px 30px 0 0;
 }
 
 .card-texto {
@@ -212,11 +219,11 @@ main{
 
 .card-texto>h2 {
     margin: 15px 0;
+    font-family: var(--fonte-cod);
 }
 
 .card-texto p {
     line-height: 35px;
-    margin-bottom: 30px;
 }
 
 .card-texto abbr {
@@ -242,36 +249,6 @@ main{
     text-decoration: dashed;
 }
 
-.btn-card {
-    margin: 0 auto 30px auto;
-    display: flex;
-    width: 70%;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 2px;
-    transition: .25s cubic-bezier(0.47, 0, 0.745, 0.715);
-    cursor: pointer;
-    color: white;
-}
-
-.card-html .btn-card {
-    background-color: #d6623c;
-}
-
-.card-css .btn-card {
-    background-color: #2B6CA1;
-}
-
-.card-js .btn-card {
-    background-color: #E5A032;
-}
-
-.btn-card:hover {
-    width: 100%;
-}
-
 /* Parte explicativa sobre o computador */
 
 #recomendacao-pc {
@@ -280,7 +257,7 @@ main{
 }
 
 #requisitos-background {
-    background: black center center url(../imagens/computadorMod.jpg) fixed no-repeat   ;
+    background: black center center url(../imagens/computadorMod.jpg) fixed no-repeat;
     background-size: cover;
     width: 100%;
 }
@@ -313,10 +290,9 @@ main{
 .texto-requisitos:nth-child(2) {
     padding: 30px 30px;
     border-radius: 10px 10px 0 0;
-
 }
 
-.paragrafo-requisitos > em {
+.paragrafo-requisitos>em {
     padding: 5px;
     border-radius: 4px;
     border: 1px solid #d84b1c;
@@ -365,34 +341,35 @@ main{
 .item {
     border-radius: 5px;
     height: 300px;
-    background-color:#d84b1c;
     margin: 20px;
     display: flex;
     position: relative;
     flex-direction: row;
     justify-content: space-between;
     box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.218);
-}
-
-.frontMentor {
-    background: grey url(../imagens/frontend-mentor-challenges.png) center center no-repeat ;
-    background-size: cover;
-    background-blend-mode: color-burn;    
-}
-
-.item img {
-    width: 200px;
+    background: grey center center no-repeat;
+    background-size: contain;
+    background-blend-mode: color-burn;
 }
 
 .item figure {
-    height: 73.74px;
+    height: 92.17px;
     border-right: .1px solid black;
 }
-.lado-esq-card {
-    display:flex;
+
+.item img {
+    width: 250px;
+    height: 92.17px;
+    background-color: white;
+    object-fit: contain;
+}
+
+.lado-esq-sites {
+    display: flex;
     flex-direction: column;
 }
-.lado-esq-card a {
+
+.lado-esq-sites a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -403,38 +380,144 @@ main{
     padding: 20px;
     cursor: pointer;
     background-color: #65afeb;
-    color: black;
-    font: normal bold 1.4rem var(--fonte-texto);
+    font: normal bold 1.4rem var(--fonte-cod);
+    letter-spacing: .5px;
     transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
+    color: #1C1780;
 }
 
-.lado-esq-card a:hover {
+.lado-esq-sites a:hover {
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 
-.lado-dir-card {
+.lado-esq-sites span {
+    margin-right: 7px;
+    font-size: 20px;
+}
+
+.lado-dir-sites {
     flex-wrap: wrap;
     display: flex;
-    font: normal normal 1.5rem var(--fonte-texto); 
+    font: normal normal 1.5rem var(--fonte-texto);
     background-color: white;
-    text-align: center;    
+    text-align: center;
 }
 
-.lado-dir-card h2 {
+.lado-dir-sites h2 {
     align-self: flex-start;
     width: 100%;
     padding: 10px 20px 0 20px;
 }
 
-.lado-dir-card p {
+.lado-dir-sites p {
     align-self: baseline;
     padding: 5px 30px;
     font-size: 1.7rem;
-    border-radius:10px;
+    border-radius: 10px;
+}
+
+.frontMentor {
+    background-image: url(../imagens/frontend-mentor-challenges.png);
+}
+
+.w3c {
+    background-image: url(../imagens/w3c-fundo.png);
+}
+
+.codecademy {
+    background-image: url(../imagens/code-academy-fundo.png);
+}
+
+.codecademy img {
+    object-fit: cover;
+}
+
+.mdn {
+    background-image: url(../imagens/mdn-fundo.png);
+    background-blend-mode: darken;
 }
 
 
+footer {
+    width: 100%;
+    background-color: var(--corPrincipal);
+    color: white; 
+    padding: 40px 0;
+}
 
+.footer-geral{
+    max-width: 1368px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font: normal normal 1.5rem var(--fonte-texto);
+}
 
-footer {}
+.footer-geral div {
+    width: 350px;
+}
+
+.projetos-github h2 {
+    margin-bottom: 25px;
+}
+
+.projetos-github a{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    height: max-content;    
+    color: white;
+    border: 0px;
+    position: relative;
+}
+
+.projetos-github a::before{
+    content: ' ';
+    border-top:1px solid transparent;
+    border-left:1px solid transparent;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    border-radius: 5px;
+    transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);    
+}
+
+.projetos-github a:hover::before {
+    border-left:1px solid white;
+    border-top:1px solid white;
+    width: 100%;
+    height: 100%;    
+}
+
+.projetos-github a::after {
+    content: ' ';
+    border-radius: 5px;
+    border-bottom:1px solid transparent;
+    border-right:1px solid transparent;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.projetos-github a:hover::after{
+    border-right:1px solid white;
+    border-bottom:1px solid white;
+    width: 100%;
+    height: 100%;    
+}
+
+.projetos-github img {
+    border-radius: 10px;
+    width: 50px;
+    margin-right: 8px;
+}

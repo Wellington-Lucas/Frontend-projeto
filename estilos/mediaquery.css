@@ -39,11 +39,11 @@
         padding: 20px;
         text-align: center;
         width: 100%;
-        border: 0px;
+        border: 1px solid transparent;
         position: relative;
     }
 
-    .menuMobile a::after {
+    .menuMobile a::before {
         transition: .35s;
         content: ' ';
         position: absolute;
@@ -53,7 +53,7 @@
         width: 0%;
     }
 
-    .menuMobile a:hover::after {
+    .menuMobile a:hover::before {
         width: 100%;
     }
     
