@@ -26,6 +26,10 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    color: white;
+}
+
 body {
     font-size: 1.6rem;
     position: relative;
@@ -275,7 +279,7 @@ main{
 .texto-requisitos {
     margin: auto;
     padding: 0 30px 25px 30px;
-    width: 550px;
+    max-width: 550px;
     font: normal 1.6rem var(--fonte-texto);
     text-align: center;
     line-height: 30px;
@@ -308,6 +312,10 @@ main{
 .paragrafo-requisitos {
     font-family: var(--fonte-texto);
     color: black;
+}
+
+.paragrafo-requisitos a {
+    color: blueviolet;
 }
 
 /* Recomendação de Sites */
@@ -379,7 +387,7 @@ main{
     height: 20%;
     padding: 20px;
     cursor: pointer;
-    background-color: #65afeb;
+    background-image: linear-gradient(45deg, #8fc3ee, #65afeb);
     font: normal bold 1.4rem var(--fonte-cod);
     letter-spacing: .5px;
     transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
@@ -441,24 +449,45 @@ main{
 
 footer {
     width: 100%;
+    height: max-content;
     background-color: var(--corPrincipal);
     color: white; 
     padding: 30px 0;
+    margin: auto;
 }
 
 .footer-geral{
     max-width: 1368px;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
     font: normal normal 1.5rem var(--fonte-texto);
 }
 
+.footer-geral h2 {
+    margin-bottom: 25px;
+}
+
 .footer-geral div {
-    width: 350px;
+    max-width: 450px;
+    min-width: 400px;
     height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-geral a {
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-geral div {
+    margin: auto;
 }
 
 .projetos-github h2 {
@@ -467,12 +496,11 @@ footer {
 
 .projetos-github a{
     display: flex;
-    width: 80%;
+    width: 70%;
     margin: auto;
     padding: 10px;
     align-items: center;
-    justify-content: center;
-    height: 70px;    
+    justify-content: center;    
     color: white;
     border: 0px;
     position: relative;
@@ -526,12 +554,8 @@ footer {
 
 /* Sobre o criador */
 
-.sobre-o-criador h2 {
-    margin-bottom: 25px;
-}
-
 .sobre-o-criador a {
-    height: max-content;
+
     width: max-content;
     margin: auto;
     padding: 10px;
@@ -551,4 +575,63 @@ footer {
     width: 60px;
     border-radius: 10px;
     margin-left: 8px;
+}
+
+.contatos img {
+    width: 40px;
+    margin-right: 8px;
+}
+
+.contatos a {
+    padding: 10px;
+    display: flex;
+    width:max-content;
+    align-items: center;
+    margin: auto;
+}
+
+div.contatos-link {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-direction: row;
+
+}
+
+.contatos-link a {
+    border: 0px;
+    position: relative;
+}
+
+.contatos-link a::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-bottom: 1px solid transparent;
+    border-radius: 5px;
+    width: 0%;
+    transition: all .9s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.contatos-link a:hover::after {
+    width: 50%;
+    border-bottom:1px solid white;
+}
+
+.contatos-link a::before {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    right:50% ;
+    border-bottom: 1px solid transparent;
+    border-radius: 5px;
+    width: 0%;
+    transition: all .9s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+
+.contatos-link a:hover::before {
+    width: 50%;
+    border-bottom: 1px solid white;
 }

@@ -1,8 +1,8 @@
 @media (prefers-reduced-motion: no-preference) {
     html {
-      scroll-behavior: smooth;
+        scroll-behavior: smooth;
     }
-  }
+}
 
 @media screen and (max-width:600px) {
     html {
@@ -12,7 +12,7 @@
     .linkPrincipal {
         display: none;
     }
-    
+
     .burger {
         display: block;
         color: white;
@@ -56,34 +56,77 @@
     .menuMobile a:hover::before {
         width: 100%;
     }
-    
+
     .slide-inicial {
         position: relative;
     }
-    
+
     .container-pergunta {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
     }
-    
+
     .diferenca-p {
         line-height: 30px;
     }
-    
+
     .diferenca-img {
         width: 250px;
     }
 
     .cards {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .container-card {
         width: 80%;
         height: 100%;
         margin-bottom: 50px;
-    }   
+    }
+
+
+
+
+    #sites {
+        grid-template-columns: 1fr;
+    }
+
+    .item {
+        flex-direction: column;
+    }
+
+    .item img {
+        display: block;
+        width: 100%;
+    }
+    .item figure {
+        width: 100%;
+        border-right: 0px;
+
+    }
+    .lado-esq-sites {
+        align-items: center;
+
+    }
+
+    .lado-dir-sites {
+        display: block;
+    }
+
+    .lado-esq-sites a {
+        height: max-content;
+        margin-top: 25px;
+    }
+
+    .lado-dir-sites {
+        max-height: 110px;
+        padding: 10px;
+    }
+
+    .footer-geral div:not(.contatos) {
+        margin-bottom: 80px;
+    }
 }
 
 
