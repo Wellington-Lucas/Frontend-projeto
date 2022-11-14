@@ -4,63 +4,16 @@
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:1200px) {
+        
     html {
-        font-size: 43%;
+        font-size: 65%;
     }
-
-    #container-pergunta {
-        padding: 40px;
-    }
-
-    .diferenca-p {
-        line-height: 30px;
-    }
-
-    .diferenca-img {
-        width: 250px;
-    }
-
-    .cards {
-        flex-direction: column;
-    }
-
-    .container-card {
-        width: 100%;
-        height: max-content;
-        min-height: auto;
-        margin-bottom: 50px;
-    }
-
-    .container-card img {
-        display: block;
-        width: 50%;
-        margin: auto;
-    }
-
-
-    /* requisitos */
-
-    .texto-requisitos:first-child {
-        margin-bottom: 210px;
-    }
-
-
-
-    .item {
-        flex-direction: column;
-        text-align: center;
-        max-width: 75%;
-    }
-
-
 }
 
-
-
-@media screen and (max-width:768px) {
+@media screen and (max-width:992px) {
     html {
-        font-size: 50%;
+        font-size: 60%;
     }
 
     .linkPrincipal {
@@ -111,10 +64,15 @@
         width: 100%;
     }
 
+    #titulo-card:target, #titulo-recomendacao:target {
+        scroll-margin-top: 300px;
+        /* Cria uma margem quando o elemento é clicado */
+    }
 
     #container-pergunta {
         padding: 40px;
     }
+
 
     #sites {
         grid-template-columns: 1fr;
@@ -140,7 +98,7 @@
     }
 
     .item figure {
-        width: 50%;
+        width: 100%;
         margin: auto;
         border: 0;
     }
@@ -148,19 +106,16 @@
     .lado-esq-sites {
         order: 2;
     }
+    
 
     .lado-dir-sites {
         order: 1;
         height: 100%;
     }
 
-    .item img {
-        order: -1;
-    }
-
     .item a {
         order: 3;
-        width: 100px;
+        width: 100%;
     }
 
     .item a:hover {
@@ -172,10 +127,6 @@
         justify-content: center;
     }
 
-    .footer-geral div {
-        width: 100%;
-    }
-
     .footer-geral a {
         width: max-content;
     }
@@ -184,4 +135,58 @@
         margin-bottom: 40px;
     }
 
+    .contatos-link {
+        max-width: 300px;
+    }
 }
+
+@media screen and (max-width:600px) {
+    html {
+        font-size: 55%;
+    }
+
+    #container-pergunta {
+        padding: 40px;
+    }
+
+    .diferenca-p {
+        line-height: 30px;
+    }
+
+    .diferenca-img {
+        width: 250px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .container-card {
+        width: max-content;
+        height: max-content;
+        min-height: auto;
+        margin-bottom: 50px;
+    }
+
+    .container-card img {
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+    /* requisitos */
+
+    .texto-requisitos:first-child {
+        margin-bottom: 210px;
+    }
+
+    .item {
+        flex-direction: column;
+        text-align: center;
+        max-width: 75%;
+    }
+
+
+}
+
+
