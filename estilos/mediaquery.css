@@ -5,7 +5,7 @@
 }
 
 @media screen and (max-width:1200px) {
-        
+
     html {
         font-size: 65%;
     }
@@ -81,7 +81,7 @@
     .item {
         flex-direction: column;
         text-align: center;
-        width: 500px;
+        max-width: 500px;
         justify-content: center;
         margin: 0 auto 40px auto;
     }
@@ -106,7 +106,7 @@
     .lado-esq-sites {
         order: 2;
     }
-    
+
 
     .lado-dir-sites {
         order: 1;
@@ -118,9 +118,6 @@
         width: 100%;
     }
 
-    .item a:hover {
-    }
-
     .footer-geral {
         flex-direction: column;
         flex-wrap: wrap;
@@ -128,18 +125,17 @@
     }
 
     .footer-geral a {
-        width: max-content;
+        max-width: max-content;
     }
 
     .footer-geral div:not(.contatos) {
         margin-bottom: 40px;
     }
 
-    .contatos-link {
-        max-width: 300px;
+    div.contatos-link {
+        flex-direction: column;
     }
 }
-
 @media screen and (max-width:600px) {
     html {
         font-size: 55%;
@@ -153,8 +149,8 @@
         line-height: 30px;
     }
 
-    .diferenca-img {
-        width: 250px;
+    #diferenca-img {
+        max-width: 150px;
     }
 
     .cards {
@@ -187,6 +183,12 @@
     }
 
 
+    .sobre-o-criador {
+        display: flex;
+        flex-direction: column;
+    }
+    
+.footer-geral a {
+    width:100%;
 }
-
-
+}

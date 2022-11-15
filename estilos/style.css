@@ -96,7 +96,7 @@ span.letraCustom {
     cursor: pointer
 }
 
-main{
+main {
     margin: auto;
     margin-bottom: 150px;
 }
@@ -159,11 +159,7 @@ main{
 }
 
 #diferenca-img {
-    display: block;
-    margin: auto;
-    margin: 0 20px;
-    margin-left: 50px;
-    width: 350px;
+    max-width: 300px;
 }
 
 #tecnologias-recomendadas {
@@ -191,7 +187,7 @@ main{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    
+
 }
 
 .container-card {
@@ -450,17 +446,15 @@ main{
 
 
 footer {
-    width: 100%;
     height: max-content;
     background-color: var(--corPrincipal);
-    color: white; 
+    color: white;
     padding: 30px 40px;
     margin: auto;
 }
 
-.footer-geral{
+.footer-geral {
     display: flex;
-    align-items: flex-start;
     text-align: center;
     margin: auto;
     flex-direction: row;
@@ -474,55 +468,55 @@ footer {
 }
 
 .footer-geral div {
-    height: 150px;
-    width: 400px;
+    height:100%;
+   width: 400px;
+    max-width:100%;
     display: flex;
-    margin: auto;
+    margin: 0 auto;
     flex-direction: column;
-}
-
-.footer-geral a {
-    max-height: 100%;
-    display: flex;
     align-items: center;
 }
 
-.projetos-github a{
+.footer-geral a {
+    width: max-content;
+}
+
+.projetos-github a {
     display: flex;
     margin: auto;
     padding: 10px;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
     color: white;
     border: 0px;
     position: relative;
 }
 
-.projetos-github a::before{
+.projetos-github a::before {
     content: ' ';
-    border-top:1px solid transparent;
-    border-left:1px solid transparent;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
     top: 0;
     left: 0;
     width: 0%;
     height: 0%;
     position: absolute;
     border-radius: 5px;
-    transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);    
+    transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .projetos-github a:hover::before {
-    border-top:1px solid white;
-    border-left:1px solid white;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
     width: 100%;
-    height: 100%;    
+    height: 100%;
 }
 
 .projetos-github a::after {
     content: ' ';
     border-radius: 5px;
-    border-bottom:1px solid transparent;
-    border-right:1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid transparent;
     bottom: 0;
     right: 0;
     width: 0%;
@@ -531,11 +525,11 @@ footer {
     transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.projetos-github a:hover::after{
-    border-right:1px solid white;
-    border-bottom:1px solid white;
+.projetos-github a:hover::after {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
     width: 100%;
-    height: 100%; 
+    height: 100%;
 }
 
 .projetos-github img {
@@ -546,8 +540,8 @@ footer {
 
 /* Sobre o criador */
 
+
 .sobre-o-criador a {
-    width: max-content;
     margin: auto;
     padding: 10px;
     color: white;
@@ -562,11 +556,12 @@ footer {
     border-bottom: 1px solid white;
 }
 
-.sobre-o-criador img{
-    width: 60px;
+.sobre-o-criador img {
+    max-width: 60px;
     border-radius: 10px;
     margin-left: 8px;
 }
+
 
 .contatos img {
     width: 40px;
@@ -574,24 +569,23 @@ footer {
 }
 
 .contatos a {
-    padding: 10px;
+    padding: 20px;
     display: flex;
-    width:max-content;
-    margin: auto;
+    flex-wrap: wrap;
+    text-align: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 div.contatos-link {
-    display: flex;
+    display:flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 50px;
-    margin: auto;
-
-    flex-direction: column;
-
 }
-
 .contatos-link a {
+    width: max-content;
+    margin: auto;
     border: 0px;
     position: relative;
 }
@@ -609,14 +603,14 @@ div.contatos-link {
 
 .contatos-link a:hover::after {
     width: 50%;
-    border-bottom:1px solid white;
+    border-bottom: 1px solid white;
 }
 
 .contatos-link a::before {
     content: ' ';
     position: absolute;
     bottom: 0;
-    right:50% ;
+    right: 50%;
     border-bottom: 1px solid transparent;
     border-radius: 5px;
     width: 0%;
