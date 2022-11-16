@@ -20,7 +20,7 @@
 
 
     <style>
-        
+
     </style>
     <title>O que é ser Frontend?</title>
 </head>
@@ -50,10 +50,9 @@
     </div>
     <main>
 
-        <div class="botoes">
-            <button class="mudarMod" id="botaoEscuro" onclick="mudarModo()"></button>
-        </div>
-        
+        <button class="mudarMod" id="botaoEscuro" onclick="mudarModo()"></button>
+
+
         <section id="slide-inicial">
             <div id="container-pergunta">
                 <h1 id="pergunta-principal">O que é ser <span lang="en-us">Front-end</span>?</h1>
@@ -113,7 +112,8 @@
                     <div class="card-texto">
                         <h2>HTML</h2>
                         <p>
-                            A <abbr title="Hyper Text Markup Language" class="html">HTML</abbr> é a linguagem essencial para todo programador <span lang="en-us">Frontend</span>, visto que ela é a base para todos
+                            A <abbr title="Hyper Text Markup Language" class="html">HTML</abbr> é a linguagem essencial
+                            para todo programador <span lang="en-us">Frontend</span>, visto que ela é a base para todos
                             os sites de hoje em dia.
                         </p>
 
@@ -173,7 +173,7 @@
                     <br>
                     <p class="paragrafo-requisitos">
                         Você também pode baixar editores de códigos "leves", como o <a
-                        href="https://notepad-plus-plus.org/" target="_blank" rel="external">Notepad++</a> ou até
+                            href="https://notepad-plus-plus.org/" target="_blank" rel="external">Notepad++</a> ou até
                         mesmo o <a href="https://www.sublimetext.com/" target="_blank" rel="external">SublimeText</a>
                     </p>
                 </div>
@@ -248,7 +248,8 @@
                     </div>
                     <div class="lado-dir-sites">
                         <h2>MDN</h2>
-                        <p><q>O site MDN Web Docs fornece informações sobre tecnologias Open Web, incluindo HTML e CSS para sites.</q></p>
+                        <p><q>O site MDN Web Docs fornece informações sobre tecnologias Open Web, incluindo HTML e CSS
+                                para sites.</q></p>
                     </div>
                 </div>
             </div>
@@ -273,11 +274,13 @@
             <div class="contatos">
                 <h2>Meus contatos profissionais</h2>
                 <div class="contatos-link">
-                    <a href="https://wa.me/47999415910" target="_blank" rel="external"><img src="imagens/whatsapp-icone.png" alt="icone do Whatsapp">Whatsapp</a>
-                    <a href="https://discord.gg/bSEAcnGzDw" target="_blank" rel="external"><img src="imagens/discord-icon.png" alt="icone do Discord">Discord</a>
+                    <a href="https://wa.me/47999415910" target="_blank" rel="external"><img
+                            src="imagens/whatsapp-icone.png" alt="icone do Whatsapp">Whatsapp</a>
+                    <a href="https://discord.gg/bSEAcnGzDw" target="_blank" rel="external"><img
+                            src="imagens/discord-icon.png" alt="icone do Discord">Discord</a>
                 </div>
             </div>
-            
+
         </section>
     </footer>
 
@@ -297,7 +300,7 @@
 
         var botaoEscuro = document.getElementById('botaoEscuro')
         var fundo = document.getElementById('escuro')
-        
+
         function mudarModo() {
             if (fundo.className == 'modo-claro') {
                 fundo.className = 'modo-escuro'
@@ -306,8 +309,8 @@
                 fundo.className = 'modo-claro'
                 botaoEscuro.style.background = 'grey'
             }
-           
-            
+
+
         }
 
 

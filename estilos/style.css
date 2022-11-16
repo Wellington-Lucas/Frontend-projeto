@@ -113,24 +113,23 @@ main {
     margin-bottom: 150px;
 }
 
-.botoes  {
-    position: fixed;
+
+button.mudarMod {
     top: 50%;
     left: 5px;
-}
-
-.botoes button {
-    display: block;
+    position: fixed;
     width: 25px;
     height: 25px;
     border-radius: 50%;
     background-color: grey;
+    z-index: 8;
     transition: background .5s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 button::after {
     content: '';
-    padding: 25px;
+    z-index: 8;
+    padding: 55px;
 }
 
 #slide-inicial {
