@@ -18,10 +18,14 @@
     <link rel="stylesheet" href="estilos/mediaquery.css" media="screen">
     <link rel="stylesheet" href="estilos/impressora.css" media="print">
 
+
+    <style>
+        
+    </style>
     <title>O que é ser Frontend?</title>
 </head>
 
-<body>
+<body id="escuro" class="modo-claro">
     <header>
         <menu class="menu">
             <a href="index.html">
@@ -45,6 +49,11 @@
         <a href="paginas/sobre.html" target="_self" rel="author">Sobre</a>
     </div>
     <main>
+
+        <div class="botoes">
+            <button class="mudarMod" id="botaoEscuro" onclick="mudarModo()"></button>
+        </div>
+        
         <section id="slide-inicial">
             <div id="container-pergunta">
                 <h1 id="pergunta-principal">O que é ser <span lang="en-us">Front-end</span>?</h1>
@@ -268,6 +277,7 @@
                     <a href="https://discord.gg/bSEAcnGzDw" target="_blank" rel="external"><img src="imagens/discord-icon.png" alt="icone do Discord">Discord</a>
                 </div>
             </div>
+            
         </section>
     </footer>
 
@@ -275,6 +285,7 @@
     <script>
         let menuHamburger = document.querySelector(".burger");
         let menuM = document.querySelector(".menuMobile")
+
         function clickmenu() {
 
             if (menuM.style.display == 'flex') {
@@ -282,6 +293,21 @@
             } else {
                 menuM.style.display = 'flex';
             }
+        }
+
+        var botaoEscuro = document.getElementById('botaoEscuro')
+        var fundo = document.getElementById('escuro')
+        
+        function mudarModo() {
+            if (fundo.className == 'modo-claro') {
+                fundo.className = 'modo-escuro'
+                botaoEscuro.style.background = 'white'
+            } else {
+                fundo.className = 'modo-claro'
+                botaoEscuro.style.background = 'grey'
+            }
+           
+            
         }
 
 
