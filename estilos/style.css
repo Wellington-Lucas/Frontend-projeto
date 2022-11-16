@@ -115,21 +115,25 @@ main {
 
 
 button.mudarMod {
-    top: 50%;
+    z-index: 9;
     left: 5px;
-    position: fixed;
-    width: 25px;
-    height: 25px;
+    top: 90px;
+    position:fixed;
     border-radius: 50%;
-    background-color: grey;
-    z-index: 8;
+    width: 35px;
+    height:35px;
     transition: background .5s cubic-bezier(0.47, 0, 0.745, 0.715);
+} 
+
+button.mudarMod img {
+    background-color:#9c9c9c;
+    border-radius: 50%;
+    width: 100%;
 }
 
 button::after {
     content: '';
-    z-index: 8;
-    padding: 55px;
+    padding: 25px;
 }
 
 #slide-inicial {

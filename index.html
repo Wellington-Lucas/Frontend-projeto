@@ -50,8 +50,8 @@
     </div>
     <main>
 
-        <button class="mudarMod" id="botaoEscuro" onclick="mudarModo()"></button>
-
+        <button class="mudarMod" id="botaoEscuro" onclick="mudarModo()"><img src="imagens/lua-icon.png" alt="Trocar de tema" id="lua"></button>
+        
 
         <section id="slide-inicial">
             <div id="container-pergunta">
@@ -300,14 +300,15 @@
 
         var botaoEscuro = document.getElementById('botaoEscuro')
         var fundo = document.getElementById('escuro')
+        var img = document.getElementById('lua')
 
         function mudarModo() {
             if (fundo.className == 'modo-claro') {
                 fundo.className = 'modo-escuro'
-                botaoEscuro.style.background = 'white'
+                lua.style.background = 'white'
             } else {
                 fundo.className = 'modo-claro'
-                botaoEscuro.style.background = 'grey'
+                lua.style.background = '#9c9c9c'
             }
 
 
