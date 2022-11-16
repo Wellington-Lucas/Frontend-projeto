@@ -136,6 +136,7 @@
         flex-direction: column;
     }
 }
+
 @media screen and (max-width:600px) {
     html {
         font-size: 55%;
@@ -143,6 +144,10 @@
 
     #container-pergunta {
         padding: 40px;
+    }
+
+    #pergunta-principal {
+        font-size: 4.5rem;
     }
 
     .diferenca-p {
@@ -187,8 +192,8 @@
         display: flex;
         flex-direction: column;
     }
-    
-.footer-geral a {
-    width:100%;
-}
+
+    .footer-geral a {
+        width: 100%;
+    }
 }
