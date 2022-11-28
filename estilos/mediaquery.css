@@ -7,7 +7,33 @@
 @media screen and (max-width:1200px) {
 
     html {
-        font-size: 65%;
+        font-size: 62%;
+    }
+
+    #card-projetos {
+        grid-template-columns: 1fr;
+    }
+
+    #descricao-projetos p {
+        width: 100%;
+    }
+
+    #minha-formacao {
+        padding: 0 80px;
+    }
+
+    #formacao-container {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #descricao-projetos {
+        max-width: 600px;
+        margin: 150px auto;
+    }
+
+    #formacao-desc {
+        margin-bottom: 50px;
     }
 }
 
@@ -73,7 +99,6 @@
         padding: 40px;
     }
 
-
     #sites {
         grid-template-columns: 1fr;
     }
@@ -135,6 +160,23 @@
     div.contatos-link {
         flex-direction: column;
     }
+
+    #card-projetos {
+        grid-template-columns: 1fr;
+    }
+
+    #formacao-container img {
+        width: 100%;
+    }
+
+    #formacao-container p {
+        padding: 20px 10px ;
+    }
+
+    .item-projeto {
+        max-width: 300px;
+    }
+   
 }
 
 @media screen and (max-width:600px) {
@@ -195,5 +237,9 @@
 
     .footer-geral a {
         width: 100%;
+    }
+
+    #minha-formacao {
+        padding: 0 20px ;
     }
 }

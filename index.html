@@ -8,7 +8,7 @@
     <meta name="description"
         content="Um programador front end constrói a interface visual dos Websites, portanto ele cuida da parte visível do site, por isso o nome de Front.">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" href="icon/computer-laptop-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/computer-laptop-icon.png" type="image/x-icon">
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +18,6 @@
     <link rel="stylesheet" href="estilos/mediaquery.css" media="screen">
     <link rel="stylesheet" href="estilos/impressora.css" media="print">
 
-
-    <style>
-
-    </style>
     <title>O que é ser Frontend?</title>
 </head>
 
@@ -50,8 +46,9 @@
     </div>
     <main>
 
-        <button class="mudarMod" id="botaoEscuro" onclick="mudarModo()"><img src="imagens/lua-icon.png" alt="Trocar de tema" id="lua"></button>
-        
+        <button class="mudarMod" id="botaoEscuro" onclick="mudarModo()"><img src="imagens/lua-icon.png"
+                alt="Trocar de tema" id="lua"></button>
+
 
         <section id="slide-inicial">
             <div id="container-pergunta">
@@ -81,7 +78,7 @@
                 <p class="diferenca-p">
                     Já o <strong>desenvolvedor</strong> tem que ter uma visão mais ampla de todo o
                     projeto em si, ganhando mais responsabilidades, como: ajudar a elaborar o design do site, tratar do
-                    relacionamento com seus clientes, definir as tecnologias utilizadas no processo, entre varias outras
+                    relacionamento com seus clientes, definir as tecnologias utilizadas no processo, entre varias
                     funções
                 </p>
             </article>
@@ -112,9 +109,9 @@
                     <div class="card-texto">
                         <h2>HTML</h2>
                         <p>
-                            A <abbr title="Hyper Text Markup Language" class="html">HTML</abbr> é a linguagem essencial
-                            para todo programador <span lang="en-us">Frontend</span>, visto que ela é a base para todos
-                            os sites de hoje em dia.
+                            A <abbr title="Hyper Text Markup Language" class="html">HTML</abbr> é a linguagem para todo
+                            <span lang="en-us">Frontend</span>, visto que ela é a base para todos os sites de hoje em
+                            dia.
                         </p>
 
                     </div>
@@ -150,6 +147,7 @@
 
 
         <!-- Seção explicativa sobre o pc -->
+
         <section id="recomendacao-pc">
 
             <h1 id="titulo-requisitos-pc">Preciso de um computador bom?</h1>
@@ -213,8 +211,8 @@
                             <img src="imagens/w3c-icon.png" alt="Logo do FrontendMentor" title="Logo do FrontendMentor">
                         </figure>
 
-                        <a href="https://www.w3schools.com" target="_blank" rel="nofollow"><span
-                                class="material-icons">link</span>Visite</a>
+                        <a href="https://www.w3schools.com" target="_blank" rel="nofollow">
+                            <span class="material-icons">link</span> Visite</a>
                     </div>
                     <div class="lado-dir-sites">
                         <h2>W3C Schools</h2>
@@ -256,8 +254,6 @@
         </section>
     </main>
 
-
-
     <footer>
         <section class="footer-geral">
             <div class="projetos-github">
@@ -284,38 +280,8 @@
         </section>
     </footer>
 
+    <script src="paginas/index.js"></script>
 
-    <script>
-        let menuHamburger = document.querySelector(".burger");
-        let menuM = document.querySelector(".menuMobile")
-
-        function clickmenu() {
-
-            if (menuM.style.display == 'flex') {
-                menuM.style.display = 'none';
-            } else {
-                menuM.style.display = 'flex';
-            }
-        }
-
-        var botaoEscuro = document.getElementById('botaoEscuro')
-        var fundo = document.getElementById('escuro')
-        var img = document.getElementById('lua')
-
-        function mudarModo() {
-            if (fundo.className == 'modo-claro') {
-                fundo.className = 'modo-escuro'
-                lua.style.background = 'white'
-            } else {
-                fundo.className = 'modo-claro'
-                lua.style.background = '#9c9c9c'
-            }
-
-
-        }
-
-
-    </script>
 </body>
 
 </html>
