@@ -27,6 +27,12 @@
         margin: auto;
     }
 
+    #formacao-container p {
+        text-align: center;
+        margin: auto;
+        text-indent: 0;
+    }
+
     #descricao-projetos {
         max-width: 600px;
         margin: 150px auto;
@@ -34,6 +40,10 @@
 
     #formacao-desc {
         margin-bottom: 50px;
+    }
+
+    .footer-geral {
+        row-gap: 50px;
     }
 }
 
@@ -111,7 +121,6 @@
         margin: 0 auto 40px auto;
     }
 
-
     .item p {
         width: 100%;
         text-align: center;
@@ -119,13 +128,13 @@
 
     .item img {
         width: 100%;
-        height: 100%;
+        border-radius: 0px;
     }
 
     .item figure {
+        border: 0px;
         width: 100%;
         margin: auto;
-        border: 0;
     }
 
     .lado-esq-sites {
@@ -136,11 +145,13 @@
     .lado-dir-sites {
         order: 1;
         height: 100%;
+        border-radius: 8px 8px 0 0;
     }
 
     .item a {
         order: 3;
         width: 100%;
+        border-radius: 0 0 8px 8px;
     }
 
     .footer-geral {
@@ -161,6 +172,10 @@
         flex-direction: column;
     }
 
+    #minha-formacao {
+        padding: 0 40px;
+    }
+
     #card-projetos {
         grid-template-columns: 1fr;
     }
@@ -170,13 +185,13 @@
     }
 
     #formacao-container p {
-        padding: 20px 10px ;
+        padding: 20px 0px;
     }
 
     .item-projeto {
         max-width: 300px;
     }
-   
+
 }
 
 @media screen and (max-width:600px) {
@@ -196,25 +211,19 @@
         line-height: 30px;
     }
 
-    #diferenca-img {
-        max-width: 150px;
-    }
-
     .cards {
         flex-direction: column;
     }
 
     .container-card {
         width: max-content;
-        height: max-content;
-        min-height: auto;
         margin-bottom: 50px;
     }
 
     .container-card img {
         display: block;
-        width: 50%;
         margin: auto;
+        width: 280px;
     }
 
     /* requisitos */
@@ -229,7 +238,6 @@
         max-width: 75%;
     }
 
-
     .sobre-o-criador {
         display: flex;
         flex-direction: column;
@@ -240,6 +248,6 @@
     }
 
     #minha-formacao {
-        padding: 0 20px ;
+        padding: 0 20px;
     }
 }

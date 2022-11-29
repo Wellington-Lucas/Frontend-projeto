@@ -13,17 +13,18 @@ function clickmenu() {
 var botaoEscuro = document.getElementById('botaoEscuro')
 var fundo = document.getElementById('escuro')
 var lua = document.getElementById('lua')
-var itemProjetos = document.getElementsByClassName('item-projeto')
+var itemProjeto = document.querySelectorAll('.item-projeto')
 
 function mudarModo() {
+    console.log(itemProjeto)
     if (fundo.className == 'modo-claro') {
         fundo.className = 'modo-escuro'
         lua.style.background = 'white'
-        itemProjetos.style.background =  '#9c9c9c'
+        itemProjeto.style.background = '#363636'
     } else {        
         fundo.className = 'modo-claro'
         lua.style.background = '#9c9c9c'
-        itemProjetos.style.backgroundColor =  'white'
+        itemProjeto =  'white'
     }
 
 
