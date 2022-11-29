@@ -13,18 +13,15 @@ function clickmenu() {
 var botaoEscuro = document.getElementById('botaoEscuro')
 var fundo = document.getElementById('escuro')
 var lua = document.getElementById('lua')
-var itemProjeto = document.querySelectorAll('.item-projeto')
 
 function mudarModo() {
     console.log(itemProjeto)
     if (fundo.className == 'modo-claro') {
         fundo.className = 'modo-escuro'
         lua.style.background = 'white'
-        itemProjeto.style.background = '#363636'
     } else {        
         fundo.className = 'modo-claro'
         lua.style.background = '#9c9c9c'
-        itemProjeto =  'white'
     }
 
 
