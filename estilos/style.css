@@ -112,7 +112,6 @@ main {
     margin-bottom: 150px;
 }
 
-
 button.mudarMod {
     z-index: 9;
     left: 5px;
@@ -452,7 +451,6 @@ button::after {
     background-color: white;
     text-align: center;
     border-radius: 0 8px 8px 0;
-
 }
 
 .lado-dir-sites h2 {
