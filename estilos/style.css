@@ -513,9 +513,8 @@ footer {
 }
 
 .footer-geral div {
-    height: 100%;
     width: 400px;
-    max-width: 100%;
+    height: 180px;
     display: flex;
     margin: 0 auto;
     flex-direction: column;

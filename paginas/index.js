@@ -15,7 +15,7 @@ var fundo = document.getElementById('escuro')
 var lua = document.getElementById('lua')
 
 function mudarModo() {
-    console.log(itemProjeto)
+    
     if (fundo.className == 'modo-claro') {
         fundo.className = 'modo-escuro'
         lua.style.background = 'white'
